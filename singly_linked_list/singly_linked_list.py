@@ -19,7 +19,7 @@ class LinkedList:
         
     def add_to_head(self, value):
         new_node = Node(value)
-        new_node.next = self.head
+        self.head = new_node.next
         self.head = new_node
 
     def add_to_tail(self, value):

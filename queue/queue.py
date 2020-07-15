@@ -27,3 +27,11 @@ class Queue:
 
     def dequeue(self):
         return self.items.pop()
+
+    def  __str__(self):
+        return "string of {self.items}".format(self=self)
+
+q = Queue()
+q.enqueue(75)
+print(q)
+q.size
